@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es6": false,
+        "jest/globals": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+    },
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "plugins": [
+        "angular",
+        "jest"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

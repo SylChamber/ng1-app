@@ -1,0 +1,10 @@
+{
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.enable": true,
+    "eslint.provideLintTask": true,
+    "eslint.run": "onType",
+    "files.defaultLanguage": "javascript",
+    "npm.enableScriptExplorer": true
+}
