@@ -27,6 +27,7 @@
     "eslint": "^5.14.1",
     "eslint-plugin-angular": "^4.0.0",
     "eslint-plugin-jest": "^22.3.0",
+    "globby": "^9.0.0",
     "jest": "^24.1.0",
     "jsdom": "^13.2.0"
   }
