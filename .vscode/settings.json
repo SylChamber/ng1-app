@@ -8,12 +8,5 @@
     "eslint.provideLintTask": true,
     "eslint.run": "onType",
     "files.defaultLanguage": "javascript",
-    "jest.autoEnable": true,
-    "jest.debugCodeLens.showWhenTestStateIn": [
-        "fail",
-        "pass",
-        "unknown"
-    ],
-    "jest.showCoverageOnLoad": true,
     "npm.enableScriptExplorer": true
 }

@@ -3,17 +3,19 @@
         "browser": true,
         "commonjs": true,
         "es6": false,
-        "jest/globals": true
+        "jasmine": true
     },
     "extends": "eslint:recommended",
     "globals": {
+        "angular": true,
+        "inject": true
     },
     "parserOptions": {
         "ecmaVersion": 5
     },
     "plugins": [
         "angular",
-        "jest"
+        "jasmine"
     ],
     "rules": {
         "indent": [

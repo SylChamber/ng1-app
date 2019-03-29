@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Debug Karma", // démarrer la tâche npm test:debug avant de lancer le débogage
+        "type": "chrome",
+        "request": "attach",
+        "address": "localhost",
+        "port": 9333, // doit correspondre dans karma.conf.js
+        "webRoot": "${workspaceRoot}/src", // dossier racine des tests
+        "sourceMaps": false
+        // "userDataDir": "${workspaceRoot}/.vscode/chrome",
+        // "diagnosticLogging": true
+    }]
+}
