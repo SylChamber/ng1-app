@@ -1,0 +1,32 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="nomInitial" class="control-label col-md-2">Nom initial</label>
+        <div class="col-md-4">
+            <input id="nomInitial" ng-model="vm.nomInitial" type="text" class="form-control">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-default" ng-click="vm.assignerNom()">Assigner</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input id="nom" ng-model="vm.nom" type="text" class="form-control" set-focus="{{ ::!vm.rechercheNonVide()}}">
+    </div>
+    <div class="form-group">
+        <label for="codePostal">
+            Code postal
+        </label>
+        <input type="text" id="codePostal" ng-model="vm.codePostal" class="form-control">
+    </div>
+    <div class="form-group">
+        <button id="rechercher" class="btn btn-primary" type="submit">Rechercher</button>
+    </div>
+</form>
+<div class="row">
+    <div class="col-md-2">
+        <input type="text" class="form-control" set-focus="{{ ::vm.rechercheNonVide() }}">
+    </div>
+    <div class="col-md-2">
+        <input type="text" class="form-control">
+    </div>
+</div>

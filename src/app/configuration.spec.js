@@ -1,3 +1,6 @@
+/**
+ * Teste la configuration des tests.
+ */
 describe('configuration des tests', function () {
     /**
      * Détermine qu'Angular et son API est disponible dans l'espace global.
