@@ -1,32 +1,37 @@
 <form class="form-horizontal">
     <div class="form-group">
-        <label for="nomInitial" class="control-label col-md-2">Nom initial</label>
-        <div class="col-md-4">
-            <input id="nomInitial" ng-model="vm.nomInitial" type="text" class="form-control">
-        </div>
-        <div class="col-md-2">
-            <button type="button" class="btn btn-default" ng-click="vm.assignerNom()">Assigner</button>
+        <label for="nom" class="control-label col-md-2">Nom</label>
+        <!-- Le one-time binding :: est utilisé pour éviter de surveiller constamment la valeur de l'expression,
+             ce qui serait superflu et causerait une perte (minime, mais réelle) de performance. -->
+        <div class="col-md-6">
+                <input id="nom" ng-model="vm.nom" type="text" class="form-control" set-focus="{{ ::!vm.rechercheNonVide()}}">
         </div>
     </div>
     <div class="form-group">
-        <label for="nom">Nom</label>
-        <input id="nom" ng-model="vm.nom" type="text" class="form-control" set-focus="{{ ::!vm.rechercheNonVide()}}">
-    </div>
-    <div class="form-group">
-        <label for="codePostal">
+        <label for="codePostal" class="control-label col-md-2">
             Code postal
         </label>
-        <input type="text" id="codePostal" ng-model="vm.codePostal" class="form-control">
+        <div class="col-md-6">
+            <input type="text" id="codePostal" ng-model="vm.codePostal" class="form-control">
+        </div>
     </div>
     <div class="form-group">
-        <button id="rechercher" class="btn btn-primary" type="submit">Rechercher</button>
+        <div class="col-md-offset-2 col-md-6">
+                <button id="rechercher" class="btn btn-primary" type="submit">Rechercher</button>    
+        </div>
     </div>
 </form>
-<div class="row">
-    <div class="col-md-2">
-        <input type="text" class="form-control" set-focus="{{ ::vm.rechercheNonVide() }}">
+<div class="form-horizontal">
+    <div class="form-group">
+        <label for="champX" class="control-label col-md-2">Champ X</label>
+        <div class="col-md-6">
+                <input id="champX" type="text" class="form-control col-md-4" set-focus="{{ ::vm.rechercheNonVide() }}">
+        </div>
     </div>
-    <div class="col-md-2">
-        <input type="text" class="form-control">
+    <div class="form-group">
+        <label for="champY" class="control-label col-md-2">Champ Y</label>
+        <div class="col-md-6">
+                <input id="champY" type="text" class="form-control col-md-4">
+        </div>
     </div>
 </div>

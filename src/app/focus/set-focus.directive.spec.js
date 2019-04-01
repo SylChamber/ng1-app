@@ -1,7 +1,8 @@
 /**
  * Ces tests sur la directive setFocus ne correspondent pas à la technique standard de test de directive.
  * Ici, nous ne voulons pas tester le rendu HTML de la directive, mais son comportement. Nous allons donc
- * injecter la directive elle-même dans nos tests, plutôt que de compiler un rendu.
+ * injecter la directive elle-même dans nos tests, plutôt que de compiler un rendu avec $compile selon
+ * la technique répandue.
  * 
  * Normalement, pour une composante comme un service, on devrait regrouper tous les tests pour une méthode
  * spécifique (comme link testée ci-dessous) sous un describe. Toutefois, les tests pour notre directive
@@ -10,11 +11,15 @@
  */
 describe('setFocus directive', function () {
     beforeEach(function () {
-        // D'ordinaire, on écrirait module('app.focus.setFocusDirective') plutôt que angular.mock.module tout au long.
+        // D'ordinaire, on écrirait module('focus.setFocusDirective') plutôt que angular.mock.module tout au long.
         // (module étant un raccourci vers angular.mock.module, tout comme inject).
         // Mais module est un mot réservé dans Node.js; pour avoir l'Intellisense sur module dans VSCode,
         // il faut y référer au long  Sinon, VSCode interprète module comme du type NodeModule.
         // Ici, le paquet npm 'angular-mocks' dans package.json permet d'avoir l'Intellisense sur angular.mock.
+        //
+        // La directive focus a été enregistrée dans son propre module, 'focus.setFocusDirective'. On a uniquement
+        // besoin de charger ce module et on évite de charger toute l'application au grand complet. On respecte
+        // ainsi le principe d'isolation des tests unitaires.
         angular.mock.module('focus.setFocusDirective');
     });
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Démo de directive manipulant le DOM</title>
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/bootstrap-theme.css">
+    </head>
+    <body>
+        <div class="container" ng-app="focus">
+            <h1>Démo de directive manipulant le DOM</h1>
+            <p>La directive setFocus permet de mettre le focus sur un champ selon certaines conditions. Ici, on met le focus sur le champ Nom si aucun nom ou code postal n'a été saisi au chargement de la page (ces informations étant liées dans les <em>bindings</em>), sinon on met le focus sur le champ X.</p>
+
+            <h2>Exemple avec recherche renseignée</h2>
+            <p>Ici, un code postal a été spécifié dans les bindings, et le focus se fait sur le champ X.</p>
+            <formulaire code-postal="'H0H 0H0'"></formulaire>
+        </div>
+
+        <script src="../../scripts/angular.js"></script>
+        <script src="../../scripts/angular-resource.js"></script>
+        <script src="../../scripts/angular-animate.js"></script>
+        <script src="../../scripts/angular-sanitize.js"></script>
+        <script src="set-focus.directive.js"></script>
+        <script src="formulaire.component.js"></script>
+        <script src="focus.module.js"></script>
+    </body>
+</html>
