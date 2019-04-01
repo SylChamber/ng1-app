@@ -1,8 +1,8 @@
 (function() {
     'use strict';
 
-    angular.module('app.focus', [
-        'app.focus.setFocusDirective',
-        'app.focus.formulaireComponent'
+    angular.module('focus', [
+        'focus.setFocusDirective',
+        'focus.formulaireComponent'
     ]);
 })();

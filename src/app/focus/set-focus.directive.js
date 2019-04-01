@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app.focus.setFocusDirective', [])
+        .module('focus.setFocusDirective', [])
         .directive('setFocus', setFocus);
 
     function setFocus() {

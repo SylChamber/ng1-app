@@ -15,7 +15,7 @@ describe('setFocus directive', function () {
         // Mais module est un mot réservé dans Node.js; pour avoir l'Intellisense sur module dans VSCode,
         // il faut y référer au long  Sinon, VSCode interprète module comme du type NodeModule.
         // Ici, le paquet npm 'angular-mocks' dans package.json permet d'avoir l'Intellisense sur angular.mock.
-        angular.mock.module('app.focus.setFocusDirective');
+        angular.mock.module('focus.setFocusDirective');
     });
 
     /**

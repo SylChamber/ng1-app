@@ -3,7 +3,7 @@
 
     angular
         // @ts-ignore
-        .module('app.focus.formulaireComponent', [])
+        .module('focus.formulaireComponent', [])
         .component('formulaire', {
             templateUrl: 'focus/formulaire.html',
             controller: FormulaireController,
