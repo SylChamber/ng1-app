@@ -8,5 +8,6 @@
     "eslint.provideLintTask": true,
     "eslint.run": "onType",
     "files.defaultLanguage": "javascript",
-    "npm.enableScriptExplorer": true
+    "npm.enableScriptExplorer": true,
+    "angularKarmaTestExplorer.projectType": "Karma"
 }
