@@ -8,7 +8,8 @@
     "extends": "eslint:recommended",
     "globals": {
         "angular": true,
-        "inject": true
+        "inject": true,
+        "Promise": true
     },
     "parserOptions": {
         "ecmaVersion": 5
